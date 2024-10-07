@@ -1,0 +1,185 @@
+* {
+    /* resetting the padding and margin */
+    padding: 0;
+    margin: 0;
+
+    /* box-sizing */
+    box-sizing: border-box;
+}
+
+body {
+
+    max-width: 480px;
+    margin: auto;
+
+    header {
+        color: azure;
+        width: 100%;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        height: 50px;
+
+        nav {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                color: white;
+                font-size: larger;
+                text-decoration: none;
+                padding: 5px;
+                margin: 4px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition-duration: 1s;
+            }
+
+            a:hover {
+                color: rgb(85, 158, 222);
+                background-color: white;
+            }
+
+        }
+    }
+
+    main {
+        #locations {
+            background-color: black;
+
+            .grid-container {
+                display: flex;
+                align-items: center;
+                border: 1px solid;
+
+                .grid-card {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .card-img {
+                        margin-left: 5px;
+                        height: 65px;
+                        aspect-ratio: 1/1;
+                        overflow: hidden;
+                        border-radius: 50%;
+
+                        img {
+                            height: 70px;
+                            width: 70px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .card-body {
+                        width: 70%;
+
+                        ul {
+                            height: 100%;
+                            list-style-type: none;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+
+                            li {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                color: white;
+                            }
+
+                            strong {
+                                color: rgb(255, 255, 255);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        #bio {
+            div.bio-section {
+                background-color: black;
+                color: white;
+
+                h4 {
+                    margin-left: 3px;
+                }
+
+                p {
+                    margin-top: 3px;
+                    margin-left: 2px;
+                }
+
+            }
+
+            .profile-buttons {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                background-color: black;
+
+                button {
+                    width: 155px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    color: white;
+                    background-color: rgb(35, 34, 34);
+                    border-radius: 10px;
+                    border: 1px solid white;
+
+                }
+            }
+        }
+
+        #photo_cart {
+            background-color: black;
+
+            div.photo_cart_section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                img {
+                    margin-top: 5px;
+                    height: 158px;
+                    width: 158px;
+                    object-fit: cover;
+                    color: white;
+                }
+            }
+        }
+        #video_cart {
+            background-color: black;
+
+            div.video_cart_section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                video {
+                    margin-top: 5px;
+                    height: 158px;
+                    width: 158px;
+                    object-fit: cover;
+                    color: white;
+                }
+            }
+        }
+    }
+    footer {
+        h4 {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    }
+}
