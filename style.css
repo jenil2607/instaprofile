@@ -69,7 +69,7 @@ body {
                     justify-content: space-between;
 
                     .card-img {
-                        margin-left: 5px;
+                        margin-left: 10px;
                         height: 65px;
                         aspect-ratio: 1/1;
                         overflow: hidden;
@@ -115,12 +115,13 @@ body {
                 color: white;
 
                 h4 {
-                    margin-left: 3px;
+                    margin-left: 7px;
                 }
 
                 p {
-                    margin-top: 3px;
-                    margin-left: 2px;
+                    margin-top: 5px;
+                    margin-left: 5px;
+                    width: 250px;
                 }
 
             }
@@ -209,7 +210,8 @@ body {
 
                 a:hover {
                     color: rgb(85, 158, 222);
-                    background-color: white;
+                    transform: scale(1.1);
+                    transition-duration: .7s;
                 }
 
             }
@@ -261,12 +263,24 @@ body {
         z-index: 5;
         align-items: center;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 20px 20px;
 
         i {
             color: white;
             text-align: center;
 
+        }
+        .footer-img {
+            height: 1.5em;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
